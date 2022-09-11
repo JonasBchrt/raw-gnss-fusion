@@ -18,4 +18,4 @@ This repository might acompany a future publication where we present an appraoch
 
 * Trajectory of a quadruped robot in the Bagley Wood estimated using inertial, raw GNSS, and lidar data (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [link](), [file]().
 
-* Trajectory of a hand-held GNSS receiver in Oxford estimated using carrier-phases only: [link](), [file]().
+* Trajectory of a hand-held GNSS receiver in Oxford estimated using carrier phases only: [link](), [file]().
