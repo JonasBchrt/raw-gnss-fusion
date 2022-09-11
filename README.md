@@ -10,6 +10,6 @@ This repository might acompany a future publication where we present an appraoch
 
 2. [Instructions how to use our public robot dataset with GNSS, IMU, an lidar data](#b)
 
-3. [3.-results of our method on various datasets](#results-of-our-method-on-various-datasets)
+3. [Results of our method on various datasets](#3.-results-of-our-method-on-various-datasets)
 
 # 3. Results of our method on various datasets
