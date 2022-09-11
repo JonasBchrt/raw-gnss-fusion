@@ -8,7 +8,7 @@ This repository might acompany a future publication where we present an appraoch
 
 1. [Demo code for our carrier-phase factors](#demo-code-for-our-carrier-phase-factors)
 
-2. [Instructions how to use our public robot dataset with GNSS, IMU, an lidar data](#instructions-how-to-use-our-public-robot dataset-with-GNSS,-IMU,-and-lidar-data)
+2. [Instructions how to use our public robot dataset with GNSS, IMU, an lidar data](#instructions-how-to-use-our-public-robot-dataset-with-gnss-imu-and-lidar-data)
 
 3. [Results of our method on various datasets](#results-of-our-method-on-various-datasets)
 
