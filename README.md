@@ -14,7 +14,8 @@ This repository might acompany a future publication where we present an appraoch
 
 # Results of our method on various datasets
 
-* Trajectory of a car in Hong Kong estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue). Data from [GVINS](https://github.com/HKUST-Aerial-Robotics/GVINS-Dataset): [link](https://users.ox.ac.uk/~kell5462/hong-kong.html), [file](hong-kong.html).
+* Trajectory of a car in Hong Kong estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [link](https://users.ox.ac.uk/~kell5462/hong-kong.html), [file](hong-kong.html). Raw data from [GVINS Dataset](https://github.com/HKUST-Aerial-Robotics/GVINS-Dataset)
+![Car in Hong Kong](hong-kong.png)
 
 * Trajectory of a quadruped robot in the Bagley Wood estimated using inertial, raw GNSS, and lidar data (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [link](), [file]().
 
