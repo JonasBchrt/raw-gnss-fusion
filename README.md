@@ -32,8 +32,8 @@ Geometry:
 * IMU in base frame (orientation as [x y z w] quaternion): `q_BI: [0.999998, 0.000000, -0.001745, 0.000000]`
 * Lidar in base frame (position as [x y z] vector): `B_r_BL: [0.479112, 0.052000, -0.019785]`
 * Lidar in base frame (orientation as [x y z w] quaternion): `q_BL: [0.001234, 0.001234, 0.707106, 0.707106]`
-* GNSS antenna in base frame (position as [x y z] vector): `B_r_BA : [0.0, 0.0, 0.0]`
-* GNSS antenna in base frame (orientation as [x y z w] quaternion): `q_BA : [0.0, 0.0, 0.0, 1.0]`
+* GNSS antenna in base frame (position as [x y z] vector): `B_r_BA: [0.0, 0.0, 0.0]`
+* GNSS antenna in base frame (orientation as [x y z w] quaternion): `q_BA: [0.0, 0.0, 0.0, 1.0]`
 
 Recording rates:
 * Lidar: 10 Hz
