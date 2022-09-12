@@ -22,7 +22,7 @@ This repository might acompany a future publication where we present an appraoch
 
 Setup:
 * Platform: BostonDynamics Spot
-* Lidar: HESAI Pandar XT
+* Lidar: HESAI Pandar XT32
 * IMU: Sevensense Alphasense
 * GNSS receiver: u-blox C099-F9P
 * GNSS antenna: u-blox ANN-MB-00
