@@ -18,7 +18,34 @@ This repository might acompany a future publication where we present an appraoch
 
 # Instructions how to use our public robot dataset with GNSS, IMU, and lidar data
 
-*TODO.*
+[Link to dataset (rosbags).]()
+
+Setup:
+* Platform: BostonDynamics Spot
+* Lidar: HESAI Pandar XT
+* IMU: Sevensense Alphasense
+* GNSS receiver: u-blox C099-F9P
+* GNSS antenna: u-blox ANN-MB-00
+
+Recording rates:
+* Lidar: 10 Hz
+* IMU: 200 Hz
+* GNSS: 5 Hz
+
+Recording software:
+* Operating System: Ubuntu 20.04.5 LTS
+* IMU driver: alphasense_driver_ros
+* GNSS driver: [ublox_driver](https://github.com/ori-drs/ublox_driver)
+
+ROS topics:
+* IMU: `/alphasense_driver_ros/imu` of type `sensor_msgs/Imu`
+* Lidar: `/hesai/pandar` of type `sensor_msgs/PointCloud2`
+* Raw GNSS: `/ublox_driver/range_meas` of type `gnss_comm/GnssMeasMsg`
+* GNSS on-board fixes (DGNSS/RTK): `/ublox_driver/receiver_lla` of type `sensor_msgs/NavSatFix` or `/ublox_driver/receiver_pvt` of type `gnss_comm/GnssPVTSolnMsg`
+
+Notes:
+* IMU and lidar have a timeshift of 9.062 s w.r.t. the GNSS.
+* The GNSS driver has a bug, it reported Galileo signals at frquency xxx, which should be at frequency xxx.
 
 # Results of our method on various datasets
 
