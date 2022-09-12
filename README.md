@@ -27,6 +27,14 @@ Setup:
 * GNSS receiver: u-blox C099-F9P
 * GNSS antenna: u-blox ANN-MB-00
 
+Geometry:
+* IMU in base frame (position as [x y z] vector): `B_r_BI: [0.516857, 0.043450, -0.092900]`
+* IMU in base frame (orientation as [x y z w] quaternion): `q_BI: [0.999998, 0.000000, -0.001745, 0.000000]`
+* Lidar in base frame (position as [x y z] vector): `B_r_BL: [0.479112, 0.052000, -0.019785]`
+* Lidar in base frame (orientation as [x y z w] quaternion): `q_BL: [0.001234, 0.001234, 0.707106, 0.707106]`
+* GNSS antenna in base frame (position as [x y z] vector): `B_r_BA : [0.0, 0.0, 0.0]`
+* GNSS antenna in base frame (orientation as [x y z w] quaternion): `q_BA : [0.0, 0.0, 0.0, 1.0]`
+
 Recording rates:
 * Lidar: 10 Hz
 * IMU: 200 Hz
@@ -42,6 +50,13 @@ ROS topics:
 * Lidar: `/hesai/pandar` of type `sensor_msgs/PointCloud2`
 * Raw GNSS: `/ublox_driver/range_meas` of type `gnss_comm/GnssMeasMsg`
 * GNSS on-board fixes (DGNSS/RTK): `/ublox_driver/receiver_lla` of type `sensor_msgs/NavSatFix` or `/ublox_driver/receiver_pvt` of type `gnss_comm/GnssPVTSolnMsg`
+
+IMU parameters:
+* Accelerometer noise standard deviation: 0.0014929303436999736
+* Accelerometer bias random walk standard deviation: 6.883010680707546e-05
+* Gyroscope noise standard deviation: 0.00029824119649206544
+* Gyroscope bias random walk sigma: 1.2013119882828282e-06
+* Gravity vector: [0, 0, -9.808083883386614]
 
 Notes:
 * IMU and lidar have a timeshift of 9.062 s w.r.t. the GNSS.
