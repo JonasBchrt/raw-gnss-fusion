@@ -52,11 +52,11 @@ ROS topics:
 * GNSS on-board fixes (DGNSS/RTK): `/ublox_driver/receiver_lla` of type `sensor_msgs/NavSatFix` or `/ublox_driver/receiver_pvt` of type `gnss_comm/GnssPVTSolnMsg`
 
 IMU parameters:
-* Accelerometer noise standard deviation: 0.0014929303436999736
-* Accelerometer bias random walk standard deviation: 6.883010680707546e-05
-* Gyroscope noise standard deviation: 0.00029824119649206544
-* Gyroscope bias random walk sigma: 1.2013119882828282e-06
-* Gravity vector: [0, 0, -9.808083883386614]
+* Accelerometer noise standard deviation: `0.0014929303436999736`
+* Accelerometer bias random walk standard deviation: `6.883010680707546e-05`
+* Gyroscope noise standard deviation: `0.00029824119649206544`
+* Gyroscope bias random walk sigma: `1.2013119882828282e-06`
+* Gravity vector: `[0, 0, -9.808083883386614]`
 
 Notes:
 * IMU and lidar have a timeshift of 9.062 s w.r.t. the GNSS.
