@@ -2,7 +2,7 @@
 
 *Author: Jonas Beuchert*
 
-This repository might acompany a future publication where we present an appraoch to fuse raw GNSS data with other sensing modalities using a factor graph. The goal is to localize a robot in the global Earth frame without drift.
+This repository might accompany a future publication where we present an approach to fuse raw GNSS data with other sensing modalities (IMU and lidar) using a factor graph. The goal is to localize a mobile robot in the global Earth frame without drift and discontinuity. The GNSS data is not only used to anchor the robot's trajectory in the global Earth frame and to eliminate drift, but also for highly accurate local positioning using the carrier-phase observations of a GNSS receiver.
 
 **Table of Contents**
 
@@ -18,7 +18,9 @@ This repository might acompany a future publication where we present an appraoch
 
 # Instructions how to use our public robot dataset with GNSS, IMU, and lidar data
 
-[Link to dataset (rosbags).]()
+[Link to dataset.]()
+
+The data comes as three consecutive rosbags.
 
 Setup:
 * Platform: BostonDynamics Spot
