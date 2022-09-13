@@ -101,7 +101,7 @@ The data comes as three consecutive rosbags.
 
 ### Setup
 * Platform: BostonDynamics Spot
-* Lidar: HESAI Pandar XT32
+* Lidar: HESAI XT32
 * IMU: Sevensense Alphasense
 * GNSS receiver: u-blox C099-F9P
 * GNSS antenna: u-blox ANN-MB-00
