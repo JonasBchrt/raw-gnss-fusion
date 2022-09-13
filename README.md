@@ -156,4 +156,7 @@ We implemented pseudorange, IMU, and lidar factors in addition to the carrier-ph
 * Trajectory of a hand-held GNSS receiver in Oxford estimated using carrier phases only: [online map](https://users.ox.ac.uk/~kell5462/nhm.html), [file](nhm.html).
 ![Hand-held GNSS receiver in Oxford](nhm.png)
 
+* Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](park-town.html).
+![Car in Oxford](park-town.png)
+
 *More TODO.*
