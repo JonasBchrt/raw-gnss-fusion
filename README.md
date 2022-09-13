@@ -145,6 +145,8 @@ The data comes as three consecutive rosbags.
 
 # Results of our method on various datasets
 
+We implemented pseudorange, IMU, and lidar factors in addition to the carrier-phase factors described above and estimated trajectories on several sequences using the resulting optimization algorithm.
+
 * Trajectory of a car in Hong Kong estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/hong-kong.html), [file](hong-kong.html). Raw data from [GVINS Dataset](https://github.com/HKUST-Aerial-Robotics/GVINS-Dataset).
 ![Car in Hong Kong](hong-kong.png)
 
