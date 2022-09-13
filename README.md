@@ -29,6 +29,8 @@ Setup:
 * GNSS receiver: u-blox C099-F9P
 * GNSS antenna: u-blox ANN-MB-00
 
+![Quadruped with GNSS receiver, GNSS antenna, and lidar](bagley-setup.jpg)
+
 Geometry:
 * IMU in base frame (position as [x y z] vector): `B_r_BI: [0.516857, 0.043450, -0.092900]`
 * IMU in base frame (orientation as [x y z w] quaternion): `q_BI: [0.999998, 0.000000, -0.001745, 0.000000]`
