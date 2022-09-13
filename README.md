@@ -141,7 +141,7 @@ The data comes as three consecutive rosbags.
 
 ### Notes
 * IMU and lidar have a timeshift of 9.062 s w.r.t. the GNSS.
-* The GNSS driver has a bug, it reported Galileo signals at frquency 1.2276 GHz, which should be at frequency 1.20714 GHz, the center frequency of Galileo's E5b band.
+* The GNSS driver has a bug, it reported Galileo signals at frequency 1.2276 GHz, which should be at frequency 1.20714 GHz, the center frequency of Galileo's E5b band.
 
 # Results of our method on various datasets
 
@@ -158,5 +158,3 @@ We implemented pseudorange, IMU, and lidar factors in addition to the carrier-ph
 
 * Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](park-town.html).
 ![Car in Oxford](park-town.png)
-
-*More TODO.*
