@@ -88,7 +88,7 @@ python3.7 -m pip install pyubx2==1.1.7 matplotlib numpy geographiclib pymap3d fo
 
 ```shell
 cd raw-gnss-fusion
-python3.7 demo_linear_pseudorange_factor_zed_f9p.py
+python3.7 demo_timerelative_carrierphase_factor_zed_f9p.py
 ```
 
 *TODO.*
