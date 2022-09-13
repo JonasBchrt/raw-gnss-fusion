@@ -14,6 +14,83 @@ This repository might accompany a future publication where we present an approac
 
 # Demo code for our carrier-phase factors
 
+This repository contains a demo script that shows how carrier-phase observations from a GNSS receiver can be used in factor-graph optimization for accurate local/relative localization of a moving platform.
+Specifically, we create time-relative double-differential carrier-phase factors between different states in time.
+
+## Setup
+
+The script is written in Python using the GTSAM library for the optimization and the GPSTk library for the GNSS processing.
+It was tested with Python 3.7 on Ubuntu 20.04.5 LTS (Focal Fossa).
+The data comes in u-blox' UBX format.
+
+### 1. Install dependencies via apt
+
+Open terminal.
+
+```shell
+apt update
+apt install -y cmake git swig wget libtbb-dev libboost-all-dev pip
+```
+
+### 2. Install Python 3.7 via Miniconda
+
+```shell
+mkdir raw-gnss-fusion-libs
+cd raw-gnss-fusion-libs
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh
+bash Miniconda3-py37_4.10.3-Linux-x86_64.sh
+exit
+```
+When prompted, respond with: *enter* - *yes* - *enter* - *yes*
+
+Might work with other Python versions; just not tested.
+
+### 3. Install GPS Toolkit
+
+Re-open terminal.
+
+```shell
+cd raw-gnss-fusion-libs
+git clone https://github.com/SGL-UT/GPSTk.git
+cd GPSTk
+./build.sh -ue
+cd ..
+```
+
+Make sure that the installation uses the correct Python version, i.e., the one which you installed in step 2.
+
+### 4. Install GTSAM
+
+```shell
+git clone https://github.com/borglab/gtsam.git
+cd gtsam
+python3.7 -m pip install -r python/requirements.txt
+python3.8 -m pip install -r python/requirements.txt
+mkdir build
+cd build
+cmake .. -DGTSAM_BUILD_PYTHON=1 -DGTSAM_PYTHON_VERSION=3.7
+make python-install
+cd ../..
+```
+
+Need to build from source since rather recent features are required.
+
+Make sure that the installation uses the correct Python version, i.e., the one which you installed in step 2. This can be a bit confusing since Ubuntu 20.04's system Python 3.8 will be used in the installation process, but Python 3.7 from step 2 is the target.
+
+### 5. Clone this repository and install requirements
+
+```shell
+git clone https://github.com/JonasBchrt/raw-gnss-fusion.git
+python3.7 -m pip install pyubx2==1.1.7 matplotlib numpy geographiclib pymap3d folium pynmea2 bagpy
+```
+
+### 6. Run the script
+
+```shell
+cd raw-gnss-fusion
+python3.7 demo_linear_pseudorange_factor_zed_f9p.py
+```
+
 *TODO.*
 
 # Instructions how to use our public robot dataset with GNSS, IMU, and lidar data
