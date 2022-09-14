@@ -2,9 +2,12 @@
 
 *Author: Jonas Beuchert*
 
-This repository might accompany a future publication where we present an approach to fuse raw GNSS data with other sensing modalities (IMU and lidar) using a factor graph. The goal is to localize a mobile robot in the global Earth frame without drift and discontinuity. The GNSS data is not only used to anchor the robot's trajectory in the global Earth frame and to eliminate drift, but also for highly accurate local positioning using the carrier-phase observations of a GNSS receiver.
+This repository might accompany a future publication where we present an approach to fuse raw GNSS data with other sensing modalities (IMU and lidar) using a factor graph.
+The goal is to localize a mobile robot in the global Earth frame without drift and discontinuity.
+The GNSS data is not only used to anchor the robot's trajectory in the global Earth frame and to eliminate drift, but also for highly accurate local positioning using the carrier-phase observations of a GNSS receiver.
+However, we do not require a base station as differential GNSS methods normally do.
 
-**Table of Contents**
+This repository contains three independent pieces of work:
 
 1. [Demo code for our carrier-phase factors](#demo-code-for-our-carrier-phase-factors)
 
@@ -73,7 +76,7 @@ make python-install
 cd ../..
 ```
 
-Need to build from source since rather recent features are required.
+We need to build from source since rather recent features are required.
 
 Make sure that the installation uses the correct Python version, i.e., the one which you installed in step 2. This can be a bit confusing since Ubuntu 20.04's system Python 3.8 will be used in the installation process, but Python 3.7 from step 2 is the target.
 
@@ -94,6 +97,10 @@ python3.7 demo_timerelative_carrierphase_factor_zed_f9p.py
 *TODO.*
 
 # Instructions how to use our public robot dataset with GNSS, IMU, and lidar data
+
+This sequence is a different one than the one used above.
+A quadruped robot moved through a dense commercial forest.
+This is known to be challenging for satellite navigation due to the very limited sky visibility, many outliers in the GNSS measurements because of signal reflections by surrounding vegetation (multi-path effect), and signal degradation caused by the electromagnetic interference of the robot with the GNSS signals.
 
 [Link to dataset.]()
 
@@ -146,6 +153,7 @@ The data comes as three consecutive rosbags.
 # Results of our method on various datasets
 
 We implemented pseudorange, IMU, and lidar factors in addition to the carrier-phase factors described above and estimated trajectories on several sequences using the resulting optimization algorithm.
+This includes the sequence above and further ones that we recorded or that are publicy available.
 
 * Trajectory of a car in Hong Kong estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/hong-kong.html), [file](hong-kong.html). Raw data from [GVINS Dataset](https://github.com/HKUST-Aerial-Robotics/GVINS-Dataset).
 ![Car in Hong Kong](hong-kong.png)
