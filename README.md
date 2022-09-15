@@ -20,6 +20,8 @@ This repository contains three pieces of work that do not depend on each other:
 This repository contains a demo script that shows how carrier-phase observations from a GNSS receiver can be used in factor-graph optimization for accurate local/relative localization of a moving platform.
 Specifically, we create time-relative double-differential carrier-phase factors between different states in time.
 
+This is not our real-time code. Just a script to demonstrate the concept.
+
 ## Setup
 
 The script is written in Python using the GTSAM library for the optimization and the GPSTk library for the GNSS processing.
