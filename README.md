@@ -104,7 +104,18 @@ cd raw-gnss-fusion
 python3.7 demo_timerelative_carrierphase_factor_zed_f9p.py
 ```
 
-*TODO.*
+The script:
+* Reads raw GNSS data from an UBX file.
+* Reads satellite navigation data from a RINEX file.
+* Creates a factor graph with a state for every time with at least one GNSS observation.
+* Creates double-differenced time-relative carrier-phase factors between different states in time using the carrier-phase obseravtions.
+* Solve the factor graph either incrementally or in batch optimization.
+* Plots the resulting trajectory.
+* Plot a visualization of the factor graph with states as crosses and factors as lines.
+* Plots the residuals of the factors.
+* Saves a map with the trajectory as HTML file.
+
+There are several optimization parameters at the start of the Python script that can be altered.
 
 # Instructions how to use our public robot dataset with GNSS, IMU, and lidar data
 
