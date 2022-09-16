@@ -52,6 +52,8 @@ Might work with other Python versions; just not tested.
 
 ### 3. Install GPS Toolkit
 
+(Tested with `gpstk v8.0.0`.)
+
 Re-open terminal.
 
 ```shell
@@ -65,6 +67,8 @@ cd ..
 Make sure that the installation uses the correct Python version, i.e., the one which you installed in step 2.
 
 ### 4. Install GTSAM
+
+(Tested with `gtsam v4.1.0`.)
 
 ```shell
 git clone https://github.com/borglab/gtsam.git
@@ -86,8 +90,12 @@ Make sure that the installation uses the correct Python version, i.e., the one w
 
 ```shell
 git clone https://github.com/JonasBchrt/raw-gnss-fusion.git
-python3.7 -m pip install pyubx2==1.1.7 matplotlib numpy geographiclib pymap3d folium pynmea2 bagpy
+python3.7 -m pip install pyubx2==1.1.7 matplotlib numpy geographiclib pymap3d folium
+# or
+python3.7 -m pip install -r requirements.txt
 ```
+
+(Tested with `geographiclib v1.52`, `pymap3d v2.50`, and `folium v0.12.1`.)
 
 ### 6. Run the script
 
@@ -107,6 +115,7 @@ This is known to be challenging for satellite navigation due to the very limited
 [Link to dataset.](https://drive.google.com/drive/folders/1VqBe_JhoEwWgVNoIUkqhxmJCWm7UPKhm?usp=sharing)
 
 The data comes as three consecutive rosbags.
+There is also a RINEX file with the broadcasted satellite navgation data from the trial day.
 
 ### Setup
 * Platform: BostonDynamics Spot
