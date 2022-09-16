@@ -170,5 +170,5 @@ This includes the sequence above and further ones that we recorded or that are p
 ![Car in Oxford](jericho.png)
 
 
-* Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](park-town.html).
+* Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](park-town.html).
 ![Car in Oxford](park-town.png)
