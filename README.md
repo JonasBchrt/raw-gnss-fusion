@@ -124,7 +124,7 @@ There is also a RINEX file with the broadcasted satellite navgation data from th
 * GNSS receiver: u-blox C099-F9P
 * GNSS antenna: u-blox ANN-MB-00
 
-![Quadruped with GNSS receiver, GNSS antenna, and lidar](bagley-setup.jpg)
+![Quadruped with GNSS receiver, GNSS antenna, and lidar](images/bagley-setup.jpg)
 
 ### Geometry
 * IMU in base frame (position as [x y z] vector): `B_r_BI: [0.516857, 0.043450, -0.092900]`
@@ -166,18 +166,18 @@ There is also a RINEX file with the broadcasted satellite navgation data from th
 We implemented pseudorange, IMU, and lidar factors in addition to the carrier-phase factors described above and estimated trajectories on several sequences using the resulting optimization algorithm.
 This includes the sequence above and further ones that we recorded or that are publicy available.
 
-* Trajectory of a car in Hong Kong estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/hong-kong.html), [file](hong-kong.html). Raw data from [GVINS Dataset](https://github.com/HKUST-Aerial-Robotics/GVINS-Dataset).
-![Car in Hong Kong](hong-kong.png)
+* Trajectory of a car in Hong Kong estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/hong-kong.html), [file](results-maps/hong-kong.html). Raw data from [GVINS Dataset](https://github.com/HKUST-Aerial-Robotics/GVINS-Dataset).
+![Car in Hong Kong](results-maps/hong-kong.png)
 
-* Trajectory of a quadruped robot in the Bagley Wood estimated using inertial, raw GNSS, and lidar data (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [online map](https://users.ox.ac.uk/~kell5462/bagley.html), [file](bagley.html).
-![Quadruped in the Bagley Woods](bagley.png)
+* Trajectory of a quadruped robot in the Bagley Wood estimated using inertial, raw GNSS, and lidar data (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [online map](https://users.ox.ac.uk/~kell5462/bagley.html), [file](results-maps/bagley.html).
+![Quadruped in the Bagley Woods](results-maps/bagley.png)
 
-* Trajectory of a hand-held GNSS receiver in Oxford estimated using carrier phases only: [online map](https://users.ox.ac.uk/~kell5462/nhm.html), [file](nhm.html).
-![Hand-held GNSS receiver in Oxford](nhm.png)
+* Trajectory of a hand-held GNSS receiver in Oxford estimated using carrier phases only: [online map](https://users.ox.ac.uk/~kell5462/nhm.html), [file](results-maps/nhm.html).
+![Hand-held GNSS receiver in Oxford](results-maps/nhm.png)
 
-* Trajectory of a car in Oxford estimated with our algorithm fusing inertial, raw GNSS, and lidar data (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/jericho.html), [file](jericho.html).
-![Car in Oxford](jericho.png)
+* Trajectory of a car in Oxford estimated with our algorithm fusing inertial, raw GNSS, and lidar data (red) in comparison to RTK (ground truth, blue): [online map](https://users.ox.ac.uk/~kell5462/jericho.html), [file](results-maps/jericho.html).
+![Car in Oxford](results-maps/jericho.png)
 
 
-* Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](park-town.html).
-![Car in Oxford](park-town.png)
+* Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](results-maps/park-town.html).
+![Car in Oxford](results-maps/park-town.png)
