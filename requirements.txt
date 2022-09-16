@@ -1,0 +1,6 @@
+pyubx2==1.1.7
+matplotlib
+numpy
+geographiclib
+pymap3d
+folium
