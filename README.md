@@ -101,7 +101,7 @@ python3.7 -m pip install -r requirements.txt
 
 ```shell
 cd raw-gnss-fusion
-python3.7 demo_timerelative_carrierphase_factor_zed_f9p.py
+python3.7 demo_doublediff_timerelative_carrierphase_factor_zed_f9p.py
 ```
 
 The script:
