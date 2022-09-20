@@ -82,7 +82,7 @@ make python-install
 cd ../..
 ```
 
-We need to build from source since rather recent features are required.
+We need to build from source since rather recent features are required. In the future, just `python3.7 -m pip install gtsam` might work.
 
 Make sure that the installation uses the correct Python version, i.e., the one which you installed in step 2. This can be a bit confusing since Ubuntu 20.04's system Python 3.8 will be used in the installation process, but Python 3.7 from step 2 is the target.
 
