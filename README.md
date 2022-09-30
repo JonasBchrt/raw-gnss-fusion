@@ -194,3 +194,7 @@ This includes the sequence above and further ones that we recorded or that are p
 
 * Trajectory of a car in Oxford estimated with our algorithm fusing inertial and raw GNSS measurements (red) in comparison to RTK (ground truth, blue) and single GNSS fixes (orange): [online map](https://users.ox.ac.uk/~kell5462/park-town.html), [file](results-maps/park-town.html).
 ![Car in Oxford](results-maps/park-town.png)
+
+# Funding statement
+
+Jonas Beuchert is supported by the EPSRC Centre for Doctoral Training in Autonomous Intelligent Machines and Systems.
