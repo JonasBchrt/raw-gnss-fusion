@@ -7,6 +7,8 @@ The goal is to localize a mobile robot in the global Earth frame without drift a
 The GNSS data is not only used to anchor the robot's trajectory in the global Earth frame and to eliminate drift, but also for highly accurate local positioning using the carrier-phase observations of a GNSS receiver.
 However, we do not require a base station as differential GNSS methods normally do.
 
+> Jonas Beuchert, MArco Camurri, and Maurice Fallon. 2022. Factor Graph Fusion of Raw GNSS Sensing with IMU and Lidar for Precise Robot Localization without a Base Station. ArXiv, 7 pages. https://doi.org/10.48550/arXiv.2209.14649
+
 This repository contains three pieces of work that do not depend on each other:
 
 1. [Demo code for our carrier-phase factors](#demo-code-for-our-carrier-phase-factors)
