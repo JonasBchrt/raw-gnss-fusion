@@ -2,7 +2,7 @@
 
 *Author: Jonas Beuchert*
 
-This repository might accompany a future publication where we present an approach to fuse raw GNSS data with other sensing modalities (IMU and lidar) using a factor graph.
+This repository accompanies a publication in the proceedings of the IEEE International Conference on Robotics and Automation (ICRA) 2023 where we present an approach to fuse raw GNSS data with other sensing modalities (IMU and lidar) using a factor graph.
 The goal is to localize a mobile robot in the global Earth frame without drift and discontinuity.
 The GNSS data is not only used to anchor the robot's trajectory in the global Earth frame and to eliminate drift, but also for highly accurate local positioning using the carrier-phase observations of a GNSS receiver.
 However, we do not require a base station as differential GNSS methods normally do.
